@@ -1,8 +1,9 @@
 #!/bin/bash
 
 if [ "$#" -ne 2 ]; then
-	echo "Usage: ./gen-grid.sh A=1,2 B=x,y"
-	exit
+	echo "Uso: $0 VAR1=val1,val2 VAR2=val1,val2"
+	echo "Cada variável deve receber pelo menos dois valores separados por vírgula."
+	exit 1
 fi
 
 var1="${1%%=*}"

@@ -1,8 +1,9 @@
 #!/bin/bash
 
 if [ "$#" -lt 1 ]; then
-	echo "Usage: ./tag.sh dataset=mnist"
-	exit
+	echo "Uso: $0 VAR1=VAL1 [VAR2=VAL2 ...]"
+	echo "Adiciona colunas constantes a todas as linhas da entrada."
+	exit 1
 fi
 
 mapfile -t input

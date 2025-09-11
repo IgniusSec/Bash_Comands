@@ -1,8 +1,9 @@
 #!/bin/bash
 
 if [ "$#" -ne 2 ]; then
-	echo "Usage: ./shuffle.sh --seed 42"
-	exit
+	echo "Uso: $0 --seed SEED"
+	echo "Embaralha as linhas da entrada, preservando o cabeçalho, com semente reprodutível."
+	exit 1
 fi
 
 mapfile -t input

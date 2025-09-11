@@ -1,8 +1,9 @@
 #!/bin/bash
 
 if [ "$#" -ne 2 ]; then
-	echo "Usage: ./replicate.sh --n 2"
-	exit
+	echo "Uso: $0 --n N"
+	echo "Replica cada linha da entrada N vezes, adicionando a coluna 'rep' (1..N)."
+	exit 1
 fi
 
 mapfile -t input
