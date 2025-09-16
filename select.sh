@@ -11,7 +11,7 @@ verify_exists() {
 	return 1
 }
 
-if [ "$#" -lt 1 ]; then
+if [ "$#" -lt 1 ] || [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
 	echo "Uso: $0 COL1[,COL2,...]"
 	echo "Seleciona colunas específicas da entrada (stdin) e imprime no stdout."
 	exit 1

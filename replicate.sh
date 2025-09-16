@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$#" -ne 2 ]; then
+if [ "$#" -ne 2 ] || [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
 	echo "Uso: $0 --n N"
 	echo "Replica cada linha da entrada N vezes, adicionando a coluna 'rep' (1..N)."
 	exit 1

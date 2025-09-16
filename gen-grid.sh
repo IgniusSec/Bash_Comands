@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$#" -ne 2 ]; then
+if [ "$#" -ne 2 ] || [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
 	echo "Uso: $0 VAR1=val1,val2 VAR2=val1,val2"
 	echo "Cada variável deve receber pelo menos dois valores separados por vírgula."
 	exit 1

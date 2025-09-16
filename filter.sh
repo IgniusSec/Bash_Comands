@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$#" -lt 1 ]; then
+if [ "$#" -lt 1 ] || [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
 	echo "Uso: $0 CONDICAO"
 	echo "Filtra linhas da entrada (stdin) por condição simples de coluna:"
 	echo "  - Igualdade: COL==VAL"

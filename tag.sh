@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$#" -lt 1 ]; then
+if [ "$#" -lt 1 ] || [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
 	echo "Uso: $0 VAR1=VAL1 [VAR2=VAL2 ...]"
 	echo "Adiciona colunas constantes a todas as linhas da entrada."
 	exit 1
