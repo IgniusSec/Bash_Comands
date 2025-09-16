@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 verify_exists() {
 	IFS=',' read -r -a arr <<<"$1"

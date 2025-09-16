@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -euo pipefail
 if [ "$#" -ne 2 ] || [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
 	echo "Uso: $0 --seed SEED"
 	echo "Embaralha as linhas da entrada, preservando o cabeçalho, com semente reprodutível."
